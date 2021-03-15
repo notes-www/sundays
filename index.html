@@ -1,58 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <title>sunday</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: auto;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-</style>
 </head>
-<body>
-
-<video autoplay id="myVideo">
-  <source src="/assets/video-01.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
+<body style="background-color:black;">
+<!-- partial:index.partial.html -->
+<div class="splash debug">
+	<video controls autoplay >
+		<source src="/src/video-01.mp4" type="video/mp4">
+	</video>
+</div>
+<!-- partial -->
 
 </body>
 </html>
