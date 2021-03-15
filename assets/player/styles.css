@@ -130,7 +130,7 @@ div.navigatorThumbnailScroller::-webkit-scrollbar-thumb {
     background: rgba(255,255,255,0.4);
     -webkit-border-radius: 10px;
 }
-
+/*
 div.navigatorThumbnailSelection {
     position: absolute;
     border-top-style: none;
@@ -142,7 +142,7 @@ div.navigatorThumbnailSelection {
     width: 100%;
     height: 76px;
 }
-
+*/
 div.navigatorThumbnailContainer {
     position: absolute;
     top: 0px;
