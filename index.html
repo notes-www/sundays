@@ -1,33 +1,73 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>sunday</title>
-        <meta name="viewport" content="initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="assets/player/styles.css">
-    </head>
-    <body id="body" bgcolor="black">
-        <div id="stageArea">
-            <div id="stage" class="stage">
-            </div>
-            <div id="hyperlinkPlane" class="stage">
-            </div>
-        </div>
-        <div id="slideshowNavigator">
-        </div>
-        <div id="slideNumberControl">
-        </div>
-        <div id="slideNumberDisplay">
-        </div>
-        <div id="helpPlacard">
-        </div>
-        <div id="waitingIndicator">
-            <div id="waitingSpinner">
-            </div>
-        </div>
-        <script type="text/javascript" src="assets/player/pdfjs/bcmaps.js"></script></body>
-        <script type="text/javascript" src="assets/player/pdfjs/web/compatibility.js"></script></body>
-        <script type="text/javascript" src="assets/player/pdfjs/pdf.js"></script></body>
-        <script type="text/javascript" src="assets/player/main.js"></script></body>
-    </body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay id="myVideo">
+  <source src="/assets/video-01.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
 </html>
