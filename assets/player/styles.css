@@ -171,9 +171,9 @@ div.navigatorThumbnailItemCanvasContainer {
     width: 88px;
     height: 66px;
 }
-*/
-/* Slide Number Control */
 
+/* Slide Number Control */
+/*
 div#slideNumberControl {
     position: absolute;
     overflow: hidden;
@@ -212,7 +212,7 @@ div.slideNumberDigit {
 }
 
 /* Slide Number Display */
-
+/*
 div#slideNumberDisplay {
     position: absolute;
     overflow: hidden;
@@ -240,6 +240,7 @@ div.slideNumberDisplayDigit {
     width: 88px;
     height:39px;
 }
+*/
 
 /* Help Placard Display */
 
